@@ -3,7 +3,6 @@ import 'dart:typed_data';
 
 import 'package:bluetooth_classic/bluetooth_classic.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/services.dart';
 import 'package:flutter_zebra_sdk/flutter_zebra_sdk.dart';
 import 'package:flutter_zebra_sdk_example/label.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -14,7 +13,7 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   MyAppState createState() => MyAppState();

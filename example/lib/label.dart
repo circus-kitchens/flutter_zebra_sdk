@@ -4,7 +4,7 @@ const _black = Colors.black;
 const _white = Colors.white;
 
 class Label extends StatelessWidget {
-  const Label({Key? key}) : super(key: key);
+  const Label({super.key});
 
   @override
   Widget build(BuildContext context) {
