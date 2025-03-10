@@ -415,7 +415,7 @@ packages:
   widget_zpl_converter:
     dependency: "direct main"
     description:
-      path: "../../widget_zpl_converter"
+      path: "../widget_zpl_converter"
       relative: true
     source: path
     version: "1.0.0"

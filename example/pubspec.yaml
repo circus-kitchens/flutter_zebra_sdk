@@ -24,7 +24,7 @@ dependencies:
   permission_handler: ^11.3.1
   universal_ble: ^0.14.0
   widget_zpl_converter:
-    path: ../../widget_zpl_converter
+    path: ../widget_zpl_converter
 
 dev_dependencies:
   flutter_lints: 5.0.0
