@@ -6,9 +6,10 @@ description: Demonstrates how to use the flutter_zebra_sdk plugin.
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.17.0 <4.0.0"
 
 dependencies:
+  bluetooth_classic: ^0.0.2
   flutter:
     sdk: flutter
   flutter_zebra_sdk:
@@ -19,12 +20,14 @@ dependencies:
     # the parent directory to use the current plugin's version.
     path: ../
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.0
-  logger: ^0.9.4
+  logger: ^2.5.0
+  permission_handler: ^11.3.1
+  universal_ble: ^0.14.0
+  widget_zpl_converter:
+    path: ../widget_zpl_converter
 
 dev_dependencies:
+  flutter_lints: 5.0.0
   flutter_test:
     sdk: flutter
 

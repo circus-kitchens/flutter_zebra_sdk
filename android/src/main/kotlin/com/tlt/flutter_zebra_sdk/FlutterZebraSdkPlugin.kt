@@ -208,15 +208,18 @@ class FlutterZebraSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     } catch (e: Exception) {
       // Handle communications error here.
       e.printStackTrace()
-      result.error("Error", "onPrintZplDataOverBluetooth", e)
+      result.error("BT_DELIVERY", "Unable to deliver data to the printer $macAddress", e)
     } finally {
       if (null != conn) {
         try {
           conn.close()
         } catch (e: ConnectionException) {
           e.printStackTrace()
+          result.error("BT_CONNECTION_CLOSE", "Unable to close Bluetooth connection to $macAddress", e)
+          return
         }
       }
+      result.success(null)
     }
 
   }
